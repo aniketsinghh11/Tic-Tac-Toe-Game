@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe Game</title>
+  </head>
+  <body>
+    <div class="bd">
+      <div class="msg-container hide">
+        <p id="msg"></p>
+        <button id="new-btn">New Game</button>
+      </div>
+
+      <div class="home-screen">
+        <h1>🎮Tic-Tac-Toe</h1>
+        <button id="pvp-btn">👥 Player vs Player</button>
+        <button id="ai-btn">🤖 Player vs Computer</button>
+      </div>
+
+      <main id="game-screen" class="hide">
+        <p class="name">Tic-Tac-Toe</p>
+        <h2 id="whoseTurn">Turn : O</h2>
+        <div id="scoreboard">
+          <span>X: <span id="x-score">0</span></span>
+          <span>O: <span id="o-score">0</span></span>
+          <span>Draw: <span id="draw-score">0</span></span>
+        </div>
+
+        <div class="container">
+          <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+          </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+      </main>
+      <footer>Made with ❤️ by Aniket</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
